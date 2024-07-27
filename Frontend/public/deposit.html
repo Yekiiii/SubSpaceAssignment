@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deposit - Fintech Platform</title>
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+  <div id="navbar"></div> <!-- Navbar will be injected here -->
+
+  <div class="container">
+    <div id="navbar-container"></div>
+    <h1>Deposit Money</h1>
+    <form id="depositForm">
+      <input type="number" id="depositAmount" placeholder="Amount" required>
+      <button type="submit">Deposit</button>
+    </form>
+    <div id="message"></div>
+  </div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" id="closeButton">&times;</span>
+      <h2>Confirm Deposit</h2>
+      <p>Enter your password to confirm the deposit of <span id="confirmAmount"></span>₹</p>
+      <input type="password" id="confirmPassword" placeholder="Password" required>
+      <button id="confirmButton">Confirm</button>
+    </div>
+  </div>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/transaction.js"></script>
+</body>
+</html>

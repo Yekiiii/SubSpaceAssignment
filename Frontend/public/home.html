@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Fintech Platform</title>
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+  <div id="navbar"></div> <!-- Navbar will be injected here -->
+
+  <div  style="margin-top: 40px;" class="container" style="height: 90%;">
+    <h1>Welcome, <span id="username"></span></h1>
+    <div class="grid">
+      <div class="option">
+        <img src="deposit.png" class="picture" alt="Deposit">
+        <a href="deposit.html"><button id="depositButton">Deposit Money</button></a>
+      </div>
+      <div class="option">
+        <img src="withdraw.png" class="picture" alt="Withdraw">
+        <a href="withdraw.html"><button id="withdrawButton">Withdraw Money</button></a>
+      </div>
+      <div class="option">
+        <h2>Balance: <span id="balance"></span>₹</h2>
+      </div>
+      <div class="option">
+        <img src="transactionhistory.png" class="picture" alt="Transaction History">
+        <a href="transactions.html"><button id="historyButton">View Transaction History</button></a>
+      </div>
+    </div>
+  </div>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/home.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
